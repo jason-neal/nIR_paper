@@ -1,0 +1,12 @@
+
+install:
+  - source ./.texlive_install.sh
+
+cache:
+  directories:
+    - /tmp/texlive
+    - $HOME/.texlive
+ 
+script:
+  # timeout limit of 3 minutes
+  - travis_wait 3 make build
