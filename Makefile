@@ -12,7 +12,8 @@ pdf:
 	pdflatex -interaction=nonstopmode -halt-on-error nir_companions.tex
 
 test:
-	chktex nir_companions.tex
+	chktex nir_companions.tex -n 24
+
 
 build:
 	latexmk -pdf -interaction=nonstopmode nir_companions.tex
