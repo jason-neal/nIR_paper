@@ -266,7 +266,7 @@ The PHOENIX-ACES models include dust in equilibrium with the gas phase while ign
 There are other models that extend below 2300~K such as the BT-Settl models\citep{allard_btsettl_2013,baraffe_new_2015}. These are discussed in Sect.~\ref{subsubsec:bt-settl}.
 
 
-\subsection{\(\chi^{2} \) method}
+\subsection{\texorpdfstring{\(\chi^{2}\)} method}
 \label{subsec:chi2}
 The well known \(\chi^{2} \) technique measures the weighted sum of the squared deviation between the observation (\({O}_{i}\)) and the computed models (\(C_{i}\)), with the minimum \(\chi^2\) value representing the best-fit parameters.
 \[\chi^{2} = {\Sigma}_i { (O_{i} - C_{i})}^2 / {\sigma}_{i}, \] where \({\sigma}_{i}\) is the error on each measurement. We estimate the \(\sigma\) of each spectrum using the \(\beta\sigma\) method~\citep{czesla_posteriori_2018}, using the MAD (median absolute deviation about the median) robust estimator, an order of approximation of 5, and a jump parameter of 2. We apply the same \(\sigma\) value to all points \({\sigma}_{i} = \sigma\). The \(\beta\sigma\) method provided \(\sigma\) estimates for the target spectra which correspond inversely to signal-to-noise ratios between 100--500.
