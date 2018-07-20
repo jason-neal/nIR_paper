@@ -144,6 +144,12 @@ The observations were performed in service mode during period 89 with run ID.~08
 
 \subsubsection{Data reduction}
 \label{subsubsec:reduction}
+\begin{figure}
+    \includegraphics[width=\hsize]{images/Bad_pixel_replacement.pdf} % chktex 8
+    \caption{Example of an artifact in the optimally extracted spectra. The top panel contains the 8 normalized nod spectra after optimal extraction, while the middle panel shows the rectangular extraction for the exact same spectra. A vertical offset is included between each spectra. A single large spike in the seventh nod (pink) near pixel 230 creates a wide and noticeable artifact in the optimal extraction. The bottom panel shows the difference between a combined spectrum using the optimal nods only and a combined spectrum in which the seventh nod is replaced with its rectangular counterpart. The nod spectra are in observation order from top to bottom.}
+    \label{fig:nod_artifacts}
+\end{figure}
+
 The observations were reduced using a custom reduction pipeline~\citep{figueira_radial_2010} with some of the parameters altered to better suit the \textit{K}-band instead of the \textit{H}-band setting it was originally designed for. Written in IRAF's CL\footnote{IRAF is distributed by the National Optical Astronomy Observatories, which are operated by the Association of Universities for Research in Astronomy, {Inc.}, under cooperative agreement with the National Science Foundation.}~\citep{tody_iraf_1993} it provides for automated dark and non-linearity corrections (using the non-linearity coefficients provided by ESO), as well as the flagging and replacement of bad pixels. The images were corrected from sensitivity variations by dividing by a flat-field corrected from the blaze function effect. The nodding pairs were mutually subtracted and the order tracing was fitted by cubic splines.
 
 There are two types of extraction commonly used. The \emph{rectangular} extraction performs a rectangular aperture sum in the spatial direction while the \emph{optimal} extraction~\citep{horne_optimal_1986} also includes variance weighting to reduce the impact of the noise and deviant pixels on the total flux measurement. Each extracted nod-cycle spectrum is then normalized by dividing by a polynomial fitted to the continuum, with the degree selected for each spectrum and detector.
@@ -154,11 +160,6 @@ The individual nod spectra that contained artifacts were visually identified by 
 
 For the remainder of the paper we use combined spectra constructed by averaging the 8 nod-cycle spectra together, where some of the optimally extracted spectra have been replaced using the above method. The last panel of Fig.~\ref{fig:nod_artifacts} shows that the difference between the combined optimally extracted spectra and the \emph{combined extraction with replacements}.
 
-\begin{figure}
-    \includegraphics[width=\hsize]{images/Bad_pixel_replacement.pdf} % chktex 8
-    \caption{Example of an artifact in the optimally extracted spectra. The top panel contains the 8 normalized nod spectra after optimal extraction, while the middle panel shows the rectangular extraction for the exact same spectra. A vertical offset is included between each spectra. A single large spike in the seventh nod (pink) near pixel 230 creates a wide and noticeable artifact in the optimal extraction. The bottom panel shows the difference between a combined spectrum using the optimal nods only and a combined spectrum in which the seventh nod is replaced with its rectangular counterpart. The nod spectra are in observation order from top to bottom.}
-    \label{fig:nod_artifacts}
-\end{figure}
 
 The normalization and nod combining steps were also performed using IRAF while the following post reduction procedures and analysis all utilize \emph{Python}. This pipeline was chosen over the ESO CRIRES pipeline because it seemed relatively simple to use, being mostly automated, and appeared to have less bad pixel/cosmic ray artifacts in the resulting spectra. In hindsight this was not the case, with artifacts appearing that needed to be removed. 
 
