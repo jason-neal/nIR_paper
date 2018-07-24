@@ -50,13 +50,17 @@ Comments in order of appearance in the paper:
 3.  Table 3 –  Expand the caption of Table 3 into a separate paragraph going into detail regarding obtaining the flux ratio.  Also list the absolute K-band mag for the star and the companion, as well as what parameters are assumed to get the companion magnitude.  Table 3 is also not mentioned before Table 4.  Describe what is meant by phase coverage.  Why is there no delta RV for HD 4747?
 
 
+	So far Have explained why there is no value for HD4747 (1 observation).
 
 
 4.  Justify filter choice (Ks, Hx5e-2, J) for each object.
 
+
+
 5.  Be more specific when discussing the custom reduction pipeline (Figueira et al 2010), particularly regarding parameters altered between K and H band reductions (just specifying that “parameters” were changed is vague).
 
 	I removed the sentence that some parameters were altered. The only substantial change in the ends was the spline function order used for the tracing fit. 
+
 
 6.  Table 4 – Provide an equation for the RV calculation in the text.  Also include columns for companion-star separation (arcsec and AU), as well as distance to the system, integration time, number of exposures, and S/N of spectra.
 
