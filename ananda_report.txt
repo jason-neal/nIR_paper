@@ -56,6 +56,8 @@ Comments in order of appearance in the paper:
 
 5.  Be more specific when discussing the custom reduction pipeline (Figueira et al 2010), particularly regarding parameters altered between K and H band reductions (just specifying that “parameters” were changed is vague).
 
+	I removed the sentence that some parameters were altered. The only substantial change in the ends was the spline function order used for the tracing fit. 
+
 6.  Table 4 – Provide an equation for the RV calculation in the text.  Also include columns for companion-star separation (arcsec and AU), as well as distance to the system, integration time, number of exposures, and S/N of spectra.
 
 7. How is the degree for the polynomial fit to the continuum selected for each spectrum and detector?  Why not use the same degree for all?
