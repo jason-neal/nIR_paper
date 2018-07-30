@@ -79,7 +79,7 @@ $^{3}$European Southern Observatory, Alonso de C\'{o}rdova 3107, Vitacura, Casil
 % Abstract of the paper
 \begin{abstract}
     {\rd A}We perform an exploratory study on how to directly detect the near-infrared spectrum of candidate brown dwarf (BD) companions around FGK stars to measure or constrain their masses, thereby asserting their stellar nature or discarding it. {\rd B}We explore two different methods to probe the faint spectra of BD companions. The first technique involves the direct subtraction of two observations shifted to mutually cancel out the spectra of the host star. The second technique applies a \(\chi^{2}\) fit to the individual observations with a synthetic binary model comprised of two PHOENIX-ACES spectra, representing the spectra from the host and companion. The observed spectra are wavelength calibrated and corrected for the atmospheric absorption with the aid of synthetic telluric models.
-    {\rd C}The direct subtraction method failed to detect the signature of the companions. The \(\chi^{2}\) technique developed here is able to fit the component for the host star but unable to successfully detect the faint spectra of even the largest companion in our sample. We explore how the companion recovery performs on simulated observations and discuss reasons for the non-detection observed. From the synthetic spectra we determine the upper mass limit for the companions to be around \(\rm 600^{+20}_{-40}~M_{Jup}\) as the limitation of this technique for the data we had on hand. {\rd D}This work highlights the challenges in the spectral detection of faint BD companions. We explore the limitations of the direct subtraction method in the case of small RV separation, and attempt companion recovery at low companion/host flux ratios below 3\%, finding a high upper mass limit from the technique. {\rd This is a simple template for authors to write new MNRAS papers.
+    {\rd C}The direct subtraction method failed to detect the signature of the companions. The \(\chi^{2}\) technique developed here is able to fit the component for the host star but unable to successfully detect the faint spectra of even the largest companion in our sample. We explore how the companion recovery performs on simulated observations and discuss reasons for the non-detection observed. {\rd From the injection-recovery analysis this technique in, its current form, is insufficient below 3800~K which corresponds to an upper mass limit for the companions to be around \(\rm 600^{+20}_{-40}~M_{Jup}\)}. {\rd D}This work highlights the challenges in the spectral detection of faint BD companions. We explore the limitations of the direct subtraction method in the case of small RV separation, and attempt companion recovery at low companion/host flux ratios below 3\%, finding a high upper mass limit from the technique. {\rd This is a simple template for authors to write new MNRAS papers.
 The abstract should briefly describe the aims, methods, and main results of the paper.
 It should be a single paragraph not more than 250 words (200 words for Letters).
 No references should appear in the abstract.}
@@ -114,7 +114,7 @@ In this paper we apply two different techniques on FGK stars with BD companions 
 
 \section{Motivation and target selection}
 \label{sec:motivation}
-The work of~\citet{sahlmann_search_2011} identified several candidate brown dwarf companions of FGK stars with \(\rm M_2 \sin{i}\) values >\(\rm 10~M_{Jup}\). Seven candidates {\rd from~\citet{sahlmann_search_2011}} were selected for {\rd further} observation in order to identify their stellar nature. The target host stars are presented in Table~\ref{tab:starparams} with their stellar parameters, while the companion orbital parameters are provided in Table~\ref{tab:orbitparams}.
+The work of~\citet{sahlmann_search_2011} identified several candidate brown dwarf companions of FGK stars with \(\rm M_2 \sin{i}\) values >\(\rm 10~M_{Jup}\). Seven candidates {\rd from~\citet{sahlmann_search_2011}}, which were visible in Period 89,  were selected for {\rd further} observation in order to identify their stellar nature. The target host stars are presented in Table~\ref{tab:starparams} with their stellar parameters, while the companion orbital parameters are provided in Table~\ref{tab:orbitparams}.
 
 We note that some of these orbital parameters have been refined in the literature since observations took place. For example three candidates have had their masses refined in recent works. The companion to {HD 211847} was determined to be a low mass star with an \(\rm M_2=155~M_{Jup}\)~\citep{moutou_eccentricity_2017}, while the companion to {HD 4747} was found to have a mass of \(\rm M_2=60~M_{Jup}\)~\citep{crepp_trends_2016}. The two companions of {HD 202206} (B and c) were found to have masses of \(\rm M_B =93.6~M_{Jup}\) and \(\rm M_c = 17.9~M_{Jup}\), respectively, classifying {HD 202206}c as a ``circumbinary brown dwarf''~\citep{benedict_hd_2017}. These targets with recently refined masses create good benchmarks for us to compare any results of the techniques developed in this paper, and show that these masses do span the BD -- low mass star range. All target companions except {HD 162020} (P=8.4 days) are in (very) long period orbits (P=0.7--38 years) with masses (or \(M\sin{i}\)) greater than \(\rm 10~M_{Jup}\).
 
@@ -199,7 +199,7 @@ The wavelength solution was obtained by fitting a second order polynomial, shown
 
 Much like issues with Th-Ar calibrations this method only works well when there is sufficient coverage of telluric lines on the detector. For the wavelength setting of these observations, the spectra from the second detector (top right panel of Fig.~\ref{fig:detector4allspectra}) only has two large telluric lines present with several small lines, with relative depths smaller than 1\%, which are difficult to identify. This deteriorated the calibration stability for the second detector. With the lack of telluric contamination and stellar lines on the second detector it may have been ideal for the detection of a faint secondary spectra; unfortunately the wavelength calibration quality varies in an inverse way.
 
-We note that there are many variations on this wavelength-calibration technique including those integrated within programs such as TelFit~\citet{gullikson_correcting_2014}, and ESOs Molecfit~\citet{smette_molecfit_2015}, that perform telluric correction and re-calibrate the wavelength axis themselves. {\rd Including concurrent fitting of a stellar spectral model, adjusted for RV, along with the telluric model such as done in other recent works \citep[e.g.][]{}\textbf{Add extra papers here} could help to improve the wavelength calibration preformed here. For example \citet{piskorz_evidence_2016} use only a telluric line model at other near-infrared wavelengths but include a stellar model specifically around 2\,$\mu$m where the telluric lines are weaker.}
+We note that there are many variations on this wavelength-calibration technique including those integrated within programs such as \emph{TelFit}~\citet{gullikson_correcting_2014}, and ESOs \emph{Molecfit}~\citet{smette_molecfit_2015}, that perform telluric correction and re-calibrate the wavelength axis themselves. {\rd Including concurrent fitting of a stellar spectral model, adjusted for RV, along with the telluric model such as done in other recent works \citep[e.g.][]{}\textbf{Add extra papers here} could help to improve the wavelength calibration preformed here. For example \citet{piskorz_evidence_2016} use only a telluric line model at other near-infrared wavelengths but include a stellar model specifically around 2\,$\mu$m where the telluric lines are weaker.}
 
 
 \begin{figure*}
@@ -219,13 +219,15 @@ We attempted the technique suggested by~\citet{bertaux_tapas_2014} to address th
 
 We found that for a few spectra in our sample this method corrected the deeper telluric lines well, but in many cases we found that the fitted scaling factor was affected by the presence of blended stellar lines (attempting to fit those also). It was also strongly influenced by the deepest \(H_{2}O\) telluric lines present. We find that the telluric correction of the deep \(\rm H_{2}O \) lines could be improved with this technique, but, at the cost of worsening the correction of the many smaller \(\rm H_{2}O \) lines. Since the smaller \(\rm H_{2}O \) lines covered more of the spectrum in this region than the larger lines we chose not to continue with this separate \(\rm H_{2}O \) scaling. One possible solution for this would be to perform a piece-wise telluric correction, performing this step only for the deeper \( \rm H_{2}O\) lines, or by using one of the other tools that fits the telluric model to the observations. This technique could also benefit from a larger wavelength span that would enable blended lines to be ignored while having sufficient deep \(\rm H_{2}O\) lines to fit the scaling factor correctly. This small experiment shows that a simple scaling is not enough to correct for the absorption in an effective way, for this case.
 
+{\rd  The recent work of \citet{piskorz_evidence_2016} use a PCA technique to correct for the telluric spectra by applying it to several (number not specified) AB nodding pairs over their 60-180 minute integration time. We are uncertain if this technique would work as effectively on our observations due to our shorter integration time (24 minutes) would have less telluric variation present across the 8 nod spectra . A recent comparison of three telluric correction methods, \emph{Molecfit} and {TelFit} and {TAPAS} to the standard star method by \cite[][in prep.]{ulmer-mol _2018} found that all three synthetic models preform better at correcting for atmospheric H$_2$O compared to the standard star method with \emph{Molecfit}, being a more complete tool, preforming slightly better over TAPAS.}
+
+After the telluric correction is performed, the spectra are corrected for Earth's barycentric RV using the \emph{helcor} PyAstronomy\footnote{https://pyastronomy.readthedocs.io} function ported from the REDUCE IDL package (See~\citet[][]{piskunov_new_2002}).
+
 
 \subsection{Tapas models}
 \label{subsec:tapas_models}
 We used telluric line models to wavelength calibrate the reduced spectra in Sect.~\ref{subsec:wave_cal} and to correct for the atmospheric absorption in Sect.~\ref{subsec:telluric_correction}. We utilized the TAPAS (Transmissions of the AtmosPhere for AStronomical data) web-service\footnote{\url{http://www.pole-ether.fr/tapas/}}~\citep{bertaux_tapas_2014} to obtain atmospheric transmission models for each observation. TAPAS uses the standard line-by-line radiation transfer model code LBLRTM~\citep{clough_linebyline_1995} along with the 2008 HITRAN spectroscopic database~\citep{rothman_hitran_2009} and Arletty atmospheric profiles derived using meteorological measurements from the ETHER data center\footnote{\url{http://www.pole-ether.fr}}, which has a 6 hour resolution in atmospheric profiles.
 We use the mid-observation time to retrieve transmission models for each observation, with the Arletty atmospheric profiles\footnote{Nearest of the 6 hourly profiles} and vacuum wavelengths. The telluric models were retrieved without any barycentric correction to keep the telluric lines at a RV of zero with respect to the instrument. We obtained one model with all provided species present, convolved to a resolution of \(\rm R=50\,000 \), and another two models without an instrumental profile convolution applied. For these two extra models, one contained only the transmission spectra of \(\rm H_{2}O \) while the other was for all other constituents except \(\rm H_{2}O \). This was to explore a known issue~\citep{bertaux_tapas_2014} with the depth of \(\rm H_{2}O \) absorption lines in Sect.~\ref{subsec:telluric_correction}.
-
-After the telluric correction is performed, the spectra are corrected for Earth's barycentric RV using the \emph{helcor} PyAstronomy\footnote{https://pyastronomy.readthedocs.io} function ported from the REDUCE IDL package (See~\citet[][]{piskunov_new_2002}).
 
 
 \subsection{Wavelength masking}
@@ -240,9 +242,9 @@ In Sect.~\ref{sec:results} we also apply a further wavelength restriction to mas
 \section{Differential subtraction}
 \label{sec:spec_diff}
 
-The observations were gathered having in mind the application of a differential subtraction method~\citep[e.g.][]{ferluga_separating_1997, kostogryz_spectral_2013} to detect the spectra of the faint BD companions. In short, we Doppler shift each observation to the rest frame of the host star and then mutually subtract the spectra from pairs of observations to cancel out the spectra of the brighter host star. The residuals from this method should contain two copies of the faint companion, subtracted from each other with a radial velocity offset \(\Delta RV\), one positive and one negative. This RV offset, if detectable, would allow the mass ratio to be determined and hence the companion mass. 
+The observations were gathered having in mind the application of a differential subtraction method~\citep[e.g.][]{ferluga_separating_1997, kostogryz_spectral_2013} to detect the spectra of the faint BD companions. In short, we Doppler shift each observation to the rest frame of the host star and then mutually subtract the spectra from pairs of observations to cancel out the spectra of the brighter host star. The residuals from this method should contain two copies of the faint companion, subtracted from each other with a radial velocity offset \(\Delta RV\) between them. This RV offset, if detectable, would allow the mass ratio to be determined and hence the companion mass. 
 
-Due to the poorly separated observation times relative to the long orbital periods, this method was revealed to be inappropriate for these observations as the RV separation of the companion spectra between observations (\(\le 2.3\)\kmps{}) is significantly smaller than the FWHM (full width half maximum) of individual spectral lines (\(\sim\)6\kmps at \(\rm R=50\,000\)).  The small separation of the companion causes the lines of the companion to also mutually cancel, severely reducing the residual signal to well below the available noise level. The requirement of well separated RVs for the companion spectra was clearly stated in the original proposal but was not satisfied when the observations were obtained\footnote{see Sect.~\ref{subsubsec:differential scedualing} for more details}. Radial velocity constraints are also valid for other studies such as the detection of reflected light from exoplanets~\cite{martins_evidence_2015}. The largest estimated companion \(\Delta RV\) separation between the observations of each target is provided in the {\rd \textbf{fifth}} column of Table~\ref{tab:estimatedparameters}. 
+Due to the poorly separated observation times relative to the long orbital periods, this method was revealed to be inappropriate for these observations as the RV separation of the companion spectra between observations (\(\le 2.3\)\kmps{}) is significantly smaller than the FWHM (full width half maximum) of individual spectral lines (\(\sim\)6\kmps at \(\rm R=50\,000\)).  The small separation of the companion causes the lines of the companion to also mutually cancel, severely reducing the residual signal to well below the available noise level. The requirement of well separated RVs for the companion spectra was clearly stated in the original proposal but was not satisfied when the observations were obtained\footnote{see Sect.~\ref{subsubsec:differential scedualing} for more details}. {\rd The very large orbital periods of some of the targets would not produce a sufficient RV signal during one semester. This was a possible oversight during the proposal stage.} The largest estimated companion \(\Delta RV\) separation between the observations of each target is provided in the seventh column of Table~\ref{tab:estimatedparameters}. Radial velocity constraints are also valid for other studies such as the detection of reflected light from exoplanets~\cite{martins_evidence_2015}. 
 
 Despite these problems, we still tried to apply the method to our data. Given the negative result, however, we decided to move this section to Appendix~\ref{appendix:A1}, where we describe the method and some exploratory results that may be useful for future studies.
 
@@ -251,8 +253,7 @@ Despite these problems, we still tried to apply the method to our data. Given th
 
 \section{Binary synthetic spectral recovery}
 \label{subsec:companion_recovery}
-Since the differential method is ineffective for our dataset due to the RV separation between observations, we explored a second approach to detect the presence of the faint companion spectra. This second approach compares the observed spectra to combinations of synthetic spectral models using \(\chi^{2}\) methods which have been extensively used in the literature~\citep[e.g.][]{astudillo-defru_harps_2015, passegger_fundamental_2016, zechmeister_spectrum_2018,nemravova_xtauri_2016}.
-
+Since the differential method is ineffective for our dataset due to the RV separation between observations, we explored a second approach to detect the presence of the faint companion spectra. This second approach compares the observed spectra to combinations of synthetic spectral models using \(\chi^{2}\) methods which have been extensively used in the literature~\citep[e.g.][]{astudillo-defru_harps_2015, passegger_fundamental_2016, zechmeister_spectrum_2018,nemravova_xtauri_2016}. {\rd The temperature of synthetic spectra fitted to  the companion will provide some indication of the companions spectral type, but will not produce a direct mass constraint that was the original aim of this work.}
 
 \subsection{Synthetic PHOENIX-ACES models}
 \label{subsec:spec_models}
@@ -269,10 +270,10 @@ The PHOENIX-ACES models include dust in equilibrium with the gas phase while ign
 There are other models that extend below 2300~K such as the BT-Settl models\citep{allard_btsettl_2013,baraffe_new_2015}. These are discussed in Sect.~\ref{subsubsec:bt-settl}.
 
 
-\subsection{\texorpdfstring{\(\chi^{2}\)} method}
+\subsection{\texorpdfstring{\(\chi^{2}\)}\ \ method}
 \label{subsec:chi2}
 The well known \(\chi^{2} \) technique measures the weighted sum of the squared deviation between the observation (\({O}_{i}\)) and the computed models (\(C_{i}\)), with the minimum \(\chi^2\) value representing the best-fit parameters.
-\[\chi^{2} = {\Sigma}_i { (O_{i} - C_{i})}^2 / {\sigma}_{i}, \] where \({\sigma}_{i}\) is the error on each measurement. We estimate the \(\sigma\) of each spectrum using the \(\beta\sigma\) method~\citep{czesla_posteriori_2018}, using the MAD (median absolute deviation about the median) robust estimator, an order of approximation of 5, and a jump parameter of 2. We apply the same \(\sigma\) value to all points \({\sigma}_{i} = \sigma\). The \(\beta\sigma\) method provided \(\sigma\) estimates for the target spectra which correspond inversely to signal-to-noise ratios between 100--500.
+\[\chi^{2} = {\Sigma}_i { (O_{i} - C_{i})}^2 / {\sigma}_{i}, \] where \({\sigma}_{i}\) is the error on each measurement. We estimate the \(\sigma\) of each spectrum using the \(\beta\sigma\) method~\citep{czesla_posteriori_2018}, using the MAD (median absolute deviation about the median) robust estimator. {\rd This method estimates the spectral noise using numerical derivatives of the spectra. We followed the procedure outlined in \citet{czesla_posteriori_2018}, analysing the results from successive parameter combinations to settle on an order of approximation (derivative level) of 5, and a jump parameter (pixels skipped to avoid correlations) of 2.} We apply the same \(\sigma\) value to all points \({\sigma}_{i} = \sigma\). The \(\beta\sigma\) method provided \(\sigma\) estimates for the target spectra which correspond inversely to signal-to-noise ratios between 100--500, {\rd similar to the values given in Table~\ref{tab:observations} calculated from the continuum of detector 2.}
 
 The computed models are described in Sect.~\ref{models} and result in a multidimensional grid of \(\chi^2\) values for each combination of parameters, namely the spectral temperature, host RV, companion RV) for each detector, observation and target.
 
@@ -293,7 +294,7 @@ These synthetic spectra are used individually for the single component model and
 
 \subsubsection{Single component model}
 \label{subsubsec:single-model}
-The single model \(C^{1}_{i}\) comprises of a single synthetic spectrum, \(J\), (with model parameters \(T_{\textrm{eff}}\), logg, [Fe/H]) and is Doppler shifted by a RV value \({rv}_1\). 
+The single model \(C^{1}_{i}\) comprises of a single synthetic spectrum, \(J\), (with model parameters \(T_{\textrm{eff}}\), logg, [Fe/H], ([\(\alpha\)/Fe]) and is Doppler shifted by a RV value \({rv}_1\). 
 
 \begin{equation}
 \rm C^{1}_{i}(\lambda) = J(\lambda_0(1-\frac{{rv}_1}{c}))
@@ -320,6 +321,7 @@ We combine the models in this way to represent the correct absolute flux ratio o
 
 The binary model should provide meaningful information about the companion parameters (e.g.\ \(T_{\textrm{eff}}\)) and a estimate of the flux ratio of the system. These can be combined with the~\citet{baraffe_evolutionary_2003} models to constrain the mass of the companion. However, we need to be careful with this model as the inclusion of extra spectral components and associated parameters could also provide a better fit to observations which do not have a companion, by fitting components of the noise.\\
 
+{\rd The full list of grid parameters for the binary model are \(T_{\textrm{eff}}1\),  \(\rm logg_1\), [Fe/H]$_1$, [\(\alpha\)/Fe]$_1$, ${rv}_1$, \(T_{\textrm{eff}}2\), \(\rm logg_2\), [Fe/H]$_2$, [\(\alpha\)/Fe]$_2$, ${rv}_2$ where the subscripts 1 and 2 indicate the host and companion models respectively.}
 \subsubsection{Effective radius}
 \label{subsection-radius}
 
@@ -346,9 +348,9 @@ For each model we further allow the continuum level to be varied by \(\pm 0.05\)
 \subsection{Reducing parameters}
 \label{subsec:reduce-params}
 The high dimensionality of the binary model makes it computationally challenging and difficult to analyze the \(\chi^2\) space. 
-For reference, the available parameter space is squared when increasing from one spectral component in the single model to a binary model, and therefore becomes computationally expensive. In general the number of possible parameter combinations for \(c\) spectral components each with a grid of \(m\) models increases to \(c^m\). If the full set of PHOENIX-ACES library spectra (66456) is explored with a binary fit then this naively balloons to over 4.4 billion possible combinations. Half of these are not unique as the host and companion components are swapped. This is the worst case scenario and we implement a number of assumptions to vastly reduce the parameter-space enabling faster computation.
+For reference, the multiplicative parameter space is squared when increasing from one spectral component in the single model to a binary model, and therefore becomes computationally expensive. In general the number of possible parameter combinations for \(c\) spectral components each with a grid of \(m\) models increases to \(c^m\). If the full set of PHOENIX-ACES library spectra (66456) is explored with a binary fit then this naively balloons to over 4.4 billion possible combinations. Half of these are not unique as the host and companion components are swapped. This is the worst case scenario and we implement a number of assumptions to vastly reduce the parameter-space enabling faster computation.
 
-Our first assumption is to restrict ourselves to models with an Alpha element abundance (\([\alpha\)/Fe]) of zero. This is likely a very good approximation as all our targets have solar metallicity and are thus very likely to belong to the thin disk of the Galaxy, where \([\alpha\)/Fe] values are close to zero (i.e., solar) -- e.g.~\citet{adibekyan_chemical_2012}. Our second is to assume that we can significantly reduce the search space with literature values for the host star. We fix the metallicity of both components to the closest grid to the literature value (usually [Fe/H] =0.00). We also fix the logg of the host star to its literature values given in Table~\ref{tab:starparams}. The uncertainties on the literature measurements for logg (\(\sim\)0.1) and metallicity (\(\sim\)0.05) are both smaller than the grid steps of 0.5 for these parameters.
+Our first assumption is to restrict ourselves to models with an Alpha element abundance ([\(\alpha\)/Fe]) of zero. This is likely a very good approximation as all our targets have solar metallicity and are thus very likely to belong to the thin disk of the Galaxy, where [\(\alpha\)/Fe] values are close to zero (i.e., solar) -- e.g.~\citet{adibekyan_chemical_2012}. Our second is to assume that we can significantly reduce the search space with literature values for the host star. We fix the metallicity of both components to the closest grid to the literature value (usually [Fe/H] =0.00). We also fix the logg of the host star to its literature values given in Table~\ref{tab:starparams}. The uncertainties on the literature measurements for logg (\(\sim\)0.1) and metallicity (\(\sim\)0.05) are both smaller than the grid steps of 0.5 for these parameters.
 For the logg of the companion we use the~\citet{baraffe_evolutionary_2003,baraffe_new_2015} evolutionary model value for the given companions \(\textrm{M}_2\)/\(\textrm{M}_2\sin{i}\) and hosts age.
 
 We use the estimated companion temperatures from the Baraffe evolutionary models given the companion \(\rm M_2\) or \(\textrm{M}_2\sin{i}\) and stellar age as a starting point for the companion spectra grid computation and extend the grid in each direction, within the model limits. For example we show the companion temperature grid spanning \(-600\) to \(+400\)~K in Fig.~\ref{fig:Mdwarf_contours} and \(\pm400\)~K in Figs.~\ref{fig:HD211847_simulated_contours} and~\ref{fig:HD211847_result_contours}.
@@ -356,6 +358,8 @@ We use the estimated companion temperatures from the Baraffe evolutionary models
 The large numbers stated above also do not include the RV grid for each component. The RV grid is user defined and the number of spectra /models to consider increases when the RV grid step size is decreased (finer RV resolution). We can reduce the RV grid space significantly by tailoring it to the target being examined. For each target, we use the estimated RV values from the observation time and orbital parameters, given in Table~\ref{tab:observations} as a center starting point for the \({rv}_1\) and \({rv}_2\) values and increment the RV within a few FWHM around those values, or out to the targets \(\rm K_1\) and estimated \(\rm K_2\) values.
 
 An iterative process could be implemented to refine the RV grids, starting at a larger grid with lower RV resolution then performing a higher resolution grid about the minimum \(\chi^2\) RV values. This was only done manually but could have been automated. One could expect that a good starting RV grid step be governed by the spectral resolution, e.g.\ comparable to the FWHM velocity.
+
+For the companions targets with fully resolved orbits the known RV of  the host star, \({rv}_1\) could also have been fixed. We however left this free to see if the known value would be recovered by the fitting. 
 
 
 \section{Results}
@@ -367,7 +371,7 @@ Here we show the results from applying the companion recovery model to simulated
 \label{subsec:simulated_binaries}
 To test the companion recovery method we create simulated binary observations using PHOENIX-ACES spectra. White noise was added with a standard deviation \(\rm \sigma = 1/SNR\), for a given signal-to-noise (SNR) level. We then applied the grid-matching recovery technique detailed above and compared the resulting parameters to the inputs. 
 
-The results of two example binary simulations are displayed in Figs.~\ref{fig:Mdwarf_contours} and ~\ref{fig:HD211847_simulated_contours},both simulated with a SNR of 150. The input and recovered parameters for the binary components are indicated by the red circles and yellow stars respectively, and are given in Table~\ref{tab:example_params}. 
+The results of two example binary simulations are displayed in Figs.~\ref{fig:Mdwarf_contours} and ~\ref{fig:HD211847_simulated_contours}, both simulated with a SNR of 150. The input and recovered parameters for the binary components are indicated by the red circles and yellow stars respectively, and are given in Table~\ref{tab:example_params}. 
 The 3-\(\sigma\) contour is shown in white on the plots to indicate the shape of the confidence level only. The 1-\(\sigma\) contours are not shown here as they are much smaller than the temperature grid step and are not easy to visualize at this scale as they are often smaller than the marker shown at the minimum location. Each colored rectangle is centered on the grid point, with its shape indicating the resolution of the grid space searched.
 
 The first simulation shown in Fig.~\ref{fig:Mdwarf_contours} is for a Sun-like star with a M-dwarf companion, with a \(T_{\textrm{eff}_2} =4000\)~K. The top-left panel shows the recovered host parameters when the single model is applied to the simulated binary. The top-right and both bottom panels are the parameters recovered when using the binary model. Both left-hand panels display the parameters for the host component to easily compare between models. With both models the host temperature \(T_{\textrm{eff}_1}\) is correctly recovered. The host RV, \({rv}_1\), is 0.1\kmps{} (two grid spaces) different from the simulated value for the single component model and is correctly recovered with the binary model.
@@ -393,18 +397,18 @@ BIC = n\ln{(m)} - 2\ln{(\hat{L})}.
 
 \begin{figure*}
     \centering
-    \includegraphics[width=\hsize]{images/Mdwarf_pcolors.pdf}
+    \includegraphics[width=0.8\hsize]{images/Mdwarf_pcolors.pdf}
     
     \caption{\(\chi^2\) results for companion recovery of a simulated binary observation of a Sun-like star (\(T_{\textrm{eff}_1}=5800\)~K) with an M-dwarf companion (\(T_{\textrm{eff}_2}=4000\)~K). The top right plot shows the application of a single component model (\(C^1\)) while the other three are using a binary model (\(C^2\)). Both left hand panels show the distribution of host temperature and host RV. The top right panel shows the distribution for host and companion temperature, and the bottom right the companion temperature and radial velocity.
         The red circle and yellow star indicate the location of the simulation input and recovered parameters respectively.
-        The white line shows a 3-\(\sigma\) confidence level about the minimum \(\chi^2\) solution grid point. Each box is centered on the parameter values and shows the grid resolution.}
+        The white line shows a 3-\(\sigma\) confidence level about the minimum \(\chi^2\) solution grid point. Each box is centred on the parameter values and shows the grid resolution.}
     \label{fig:Mdwarf_contours}
 \end{figure*}
 
 
 \begin{figure*}
     \centering
-    \includegraphics[width=\hsize]{images/HD211847_example_pcolors.pdf}
+    \includegraphics[width=0.8\hsize]{images/HD211847_example_pcolors.pdf}
     \caption{Similar to Fig.~\ref{fig:Mdwarf_contours}, \(\chi^2\) results for companion recovery of a simulated binary observation similar to {HD 211847}, (\(T_{\textrm{eff}_1} = 5800\)~K, \(T_{\textrm{eff}_2}=3200\)~K). The top right plot shows the application of a single component model (\(C^1\)) while the other three are using a binary model (\(C^2\)). Both left hand panels show the distribution of host temperature and host RV. The top right panel shows the distribution for host and companion temperature, and the bottom right the companion temperature and radial velocity.
         The red circle and yellow star indicate the location of the simulation input and recovered parameters respectively.
         The white line shows a 3-\(\sigma\) confidence level about the minimum \(\chi^2\) solution grid point. Each box is centered on the parameter values and shows the grid resolution.}
@@ -414,7 +418,7 @@ BIC = n\ln{(m)} - 2\ln{(\hat{L})}.
 
 \subsection{HD211847 observation}
 \label{subsection:results-hd211847}
-{HD 211847} is the best candidate for detection as it has a \(\rm 155~M_J\) low-mass star companion~\citet{moutou_eccentricity_2017}. Even though it is not a BD it has the highest estimated flux ratio, of 0.03. The result of applying \(\chi^2\) fitting to the second observation of {HD 211847} is shown in Fig.~\ref{fig:HD211847_result_contours}.
+{HD 211847} is the best candidate for detection as it has a \(\rm 155~M_J\) low-mass star companion~\citet{moutou_eccentricity_2017}. The angular separation of the two bodies is 222 mas (or 11.3 au). Even though it is not a BD it has the highest estimated flux ratio in our sample, of 0.03 based on the \citet{baraffe_new_2015} evolution models and the known companion mass (see. Table~\ref{tab:estimatedparameters}). The angular separation of HD211847B is 222 mas with a projected distance of The result of applying \(\chi^2\) fitting to the second observation of {HD 211847} is shown in Fig.~\ref{fig:HD211847_result_contours}.
 
 For this target the metallicity of both components was fixed to 0.0 and the logg for the host was fixed at 4.5. The logg for the companion is fixed to 5.0, based on the~\citet{baraffe_new_2015} evolutionary models for the given companion mass and system age. The orbital solution was used to refine the RV search space of both components. The span RV for the companion was extended until a value inside the RV bounds was found.
 
@@ -431,7 +435,7 @@ We applied this same method to the remaining targets, with similar results. In b
 
 \begin{figure*}
     \centering
-    \includegraphics[width=\linewidth]{images/HD211847_result_pcolors.pdf}
+    \includegraphics[width=0.8\linewidth]{images/HD211847_result_pcolors.pdf}
     \caption{\(\chi^2\) result grid for observation 2 of {HD 211847}, similar to Figs.~\ref{fig:Mdwarf_contours} and~\ref{fig:HD211847_simulated_contours}. The top right plot shows the application of a single component model (\(C^1\)) while the other three are using a binary model (\(C^2\)). Both left hand panels show the distribution of host temperature and host RV. The top right panel shows the distribution for host and companion temperature, and the bottom right the companion temperature and radial velocity. The red circles indicate the literature values or calculated parameters for the target while the yellow star indicates the minimum \(\chi^2\) solution. The error bar on the \(T_{\textrm{eff}_1}\) is from the literature while the error bars on \({rv}_1\) and \({rv}_2\) are calculated by propagating the orbital parameter uncertainties though the radial velocity equation. The white line shows a 3-\(\sigma\) confidence level about the minimum \(\chi^2\) solution grid point, not always visible here due to the large \(\chi^2\) values.}
     \label{fig:HD211847_result_contours}
 \end{figure*}
@@ -445,6 +449,8 @@ We applied this same method to the remaining targets, with similar results. In b
     \label{fig:visualinspection-hd2118471}
 \end{figure*}
 
+
+{\rd BIC FOR HD211847###########}
 
 \subsection{Companion injection-recovery}
 \label{subsection:injection-recovery}
@@ -469,7 +475,7 @@ The 1-, 2-, 3-\(\sigma\) values (with 2 degrees of freedom) of 2, 6 and 11 above
 \begin{figure}
     \centering
     \includegraphics[width=\hsize]{images/inject_recovery_hd30501.pdf}
-    \caption{Result of simulated injection-recovery of synthetic companions on {HD 30501}. The blue dots and orange triangles indicate the recovered companion temperature with \(\pm100\)~K error bars for observed and synthetic spectra respectively. The black dashed diagonal shows the 1:1 temperature relation. The grey shaded region indicates the \(\pm1000\)~K temperature range explored. Gaussian noise added to the synthetic spectra was derived from the observed spectra.}
+    \caption{Result of simulated injection-recovery of synthetic companions on {HD 30501}. The blue dots and orange triangles indicate the recovered companion temperature for the observed and synthetic spectra respectively. The \(\pm100\)~K error bars are the grid step of the synthetic models. The black dashed diagonal shows the 1:1 temperature relation. The grey shaded region indicates the \(\pm1000\)~K temperature range explored. Gaussian noise added to the synthetic spectra was derived from the observed spectra.}
     \label{fig:injection-recovery}
 \end{figure}
 
@@ -491,7 +497,7 @@ Using the temperature cutoff values, we derive an upper mass limit for the compa
 \section{Discussion}
 \label{sec:discussion}
 The spectral differential and the synthetic recovery methods attempted here were both unsuccessful in a detection of the BD companion spectra.  The upper mass limits of \(600^{+20}_{-40} \) we set for these companions is very high, roughly six times higher then the BD mass limit \(\rm\sim 80-90~M_{Jup}\).
-We discuss potential reasons and solutions for these poor results below, list the lessons learned in this exploratory study, and provide some guidance for any future attempts with these methods.
+We discuss potential reasons and solutions for these poor results below, list the lessons learned in this exploratory study, and provide some guidance for any future attempts with these methods. {\rd We do note that there have been recent works, that have had successful detection of non-transiting giant planets, they use a different technique cross correlation and maximum likelyhood....} They are successful due to spectra with much higher SNR, longer wavelength range.    XXXXXXXXXXXXXXXXXXXXXXX
 
 
 \subsection{Synthetic recovery limitations}
