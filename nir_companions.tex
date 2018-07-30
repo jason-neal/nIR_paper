@@ -378,8 +378,16 @@ The second simulation shown in Fig.~\ref{fig:HD211847_simulated_contours} is per
 
 In this case with a companion RV offset, \({rv}_2\), near 0\kmps{} the host and companion lines are blended. The same spectral lines from both components are trying to match to the same features of the spectra, making it more difficult to recover the companion parameters. In the bottom right panel there appears to be multiple minima for different \({rv}_2\) and \(T_{\textrm{eff}_2}\) combinations, which we assume is partially due to the small \({rv}_2\).
 
-
-In both simulations the reduced \(\chi^2_{red}\) for the binary model is closer to 1 indicating that the binary model is a better fit. This is expected as the simulation included the companion. As mentioned above, we need to be careful, as the extra components from the binary may just happen to fit components of the noise when a binary is not present, or in our case has a low flux ratio.
+In both simulations the reduced \(\chi^2_{red}\) for the binary model is closer to 1. This is not surprising as the binary model contains extra parameters. As mentioned above, we need to be careful, as the extra components from the binary may just happen to fit components of the noise when a binary is not present, or in our case has a low flux ratio. 
+{\rd We analysis the significance between the two models using the ``Bayesian Information Criterion''(BIC)~\citep{schwarz_estimating_1978}; }
+\begin{equation}
+BIC = n\ln{(m)} - 2\ln{(\hat{L})}.
+\end{equation}
+{\rd Here \(\hat{L}\) is the maximum of the Gaussian likely-hood function }
+ \begin{equation}
+ \hat{L} = \left(\frac{1}{\sigma \sqrt{2\pi}}\right)^m \exp{\left(-\frac{\chi^2}{2}\right)},
+ \end{equation}
+ {\rd written in terms of \(\chi^2\) and a fixed $\sigma$ for all data points. The maximum likely-hood of a Gaussian distribution is equivalent  to minimizing the \(\chi^2\). In both simulations \(\Delta BIC >10\) so the preference of the binary model, with the lower BIC value, over the single component model is considered \emph{significant}.}
 
 \input{tables/recoveredparameters}
 
