@@ -1,9 +1,10 @@
 %!TEX root = ../nir_companions.tex
 
 \begin{table*}
- %   \begin{threeparttable}
+      \centering
+ \begin{threeparttable}
     \caption{Input and recovered parameters on simulations and an observation when applying a single (\(\rm C^1\)) and binary (\(\rm C^2\)) models. The logg and metallicity were fixed at \(\rm logg_1 = 4.50\), \(\rm logg_2=5.0\) and [Fe/H]=0.0 equally for both components. Gaussian noise was added to both simulations with a SNR of 150. {\rd Here $m$ and $n$ are the number of data points and parameters used in each model.}}
-    \centering
+  
     \begin{tabular}{c | *3c | *3c | *3c}
         \toprule
         & \multicolumn{3}{c|}{Simulation 1} & \multicolumn{3}{c|}{Simulation 2} & \multicolumn{3}{c}{Observed {HD 211847}} \\
@@ -25,9 +26,10 @@
         {\rd BIC} & -- & -20145 & -22315 & -- & -21477& -21377& -- & update by finding  M and N& alhtough is significant\\
         \bottomrule
     \end{tabular}
+
+\label{tab:example_params}
     \begin{tablenotes}
        \item [a] {At the arbitrary upper limit for companion temperature grid (3800~K).}
     \end{tablenotes}
-%    \end{threeparttable}
-    \label{tab:example_params}
+\end{threeparttable}
 \end{table*}
