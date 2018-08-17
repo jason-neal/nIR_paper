@@ -10,3 +10,5 @@ cache:
 script:
   # timeout limit of 3 minutes
   - travis_wait 3 make build
+  # Build pdf after make build as extra check
+  - travis_wait 3 make pdf

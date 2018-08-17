@@ -14,9 +14,8 @@ pdf:
 test:
 	chktex nir_companions.tex -n 24
 
-
 build:
-	latexmk -pdf -interaction=nonstopmode nir_companions.tex
+	latexmk -pdf -interaction=nonstopmode nir_companions.tex -f
 
 clean:
 	find . -name '*.log' -exec rm --force {} +
