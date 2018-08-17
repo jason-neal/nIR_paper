@@ -142,7 +142,7 @@ The estimated RV values for the host and companion at the time of each observati
 \subsubsection{Data reduction}
 \label{subsubsec:reduction}
 \begin{figure}
-    \includegraphics[width=\hsize]{images/Bad_pixel_replacement.pdf} % chktex 8
+    \includegraphics[width=\hsize]{images/fig1.pdf} % chktex 8
     \caption{Example of an artefact in the optimally extracted spectra. The top panel contains the 8 normalized nod spectra after optimal extraction, while the middle panel shows the rectangular extraction for the exact same spectra. A vertical offset is included between each spectra. A single large spike in the seventh nod (pink) near pixel 230 creates a wide and noticeable artefact in the optimal extraction. The bottom panel shows the difference between a combined spectrum using the optimal nods only and a combined spectrum in which the seventh nod is replaced with its rectangular counterpart. The nod spectra are in observation order from top to bottom.}
     \label{fig:nod_artefacts}
 \end{figure}
@@ -198,7 +198,7 @@ We note that there are many variations on this wavelength-calibration technique 
 
 
 \begin{figure*}
-    \includegraphics[width=0.8\hsize]{images/Spectra_examples.pdf}
+    \includegraphics[width=0.8\hsize]{images/fig2.pdf}
     \caption{Extracted, normalized and wavelength calibrated spectra for a single observation of each target. The target name is given above each spectrum along with the observation number. Each panel is the spectra from a single detector 1--4 in order of increasing wavelength. The black dashed lines indicate the unique telluric spectrum used for wavelength calibration and telluric correction for each observation.}
     \label{fig:detector4allspectra}
 \end{figure*}
@@ -365,7 +365,7 @@ For the companions targets with fully resolved orbits the known RV of the host s
 
 \begin{figure*}
     \centering
-    \includegraphics[width=0.8\hsize]{images/Mdwarf_pcolors.pdf}
+    \includegraphics[width=0.8\hsize]{images/fig3.pdf}
 
     \caption{\(\chi^2\) results for companion recovery of a simulated binary observation of a Sun-like star (\(T_{\textrm{eff}_1}=5800\)~K) with an M-dwarf companion (\(T_{\textrm{eff}_2}=4000\)~K). The top right plot shows the application of a single component model (\(C^1\)) while the other three are using a binary model (\(C^2\)). Both left hand panels show the distribution of host temperature and host RV.\@ The top right panel shows the distribution for host and companion temperature, and the bottom right the companion temperature and radial velocity.
         The red circle and yellow star indicate the location of the simulation input and recovered parameters respectively.
@@ -376,7 +376,7 @@ For the companions targets with fully resolved orbits the known RV of the host s
 
 \begin{figure*}
     \centering
-    \includegraphics[width=0.8\hsize]{images/HD211847_example_pcolors.pdf}
+    \includegraphics[width=0.8\hsize]{images/fig4.pdf}
     \caption{Similar to Fig.~\ref{fig:Mdwarf_contours}, \(\chi^2\) results for companion recovery of a simulated binary observation similar to {HD 211847}, (\(T_{\textrm{eff}_1} = 5800\)~K, \(T_{\textrm{eff}_2}=3200\)~K). The top right plot shows the application of a single component model (\(C^1\)) while the other three are using a binary model (\(C^2\)). Both left hand panels show the distribution of host temperature and host RV.\@ The top right panel shows the distribution for host and companion temperature, and the bottom right the companion temperature and radial velocity.
         The red circle and yellow star indicate the location of the simulation input and recovered parameters respectively.
         The white line shows a 3-\(\sigma\) confidence level about the minimum \(\chi^2\) solution grid point. Each box is centred on the parameter values and shows the grid resolution.}
@@ -432,7 +432,7 @@ We applied this same method to the remaining targets, with similar results. In b
 
 \begin{figure*}
     \centering
-    \includegraphics[width=0.8\hsize]{images/HD211847_result_pcolors.pdf}
+    \includegraphics[width=0.8\hsize]{images/fig5.pdf}
     \caption{\(\chi^2\) result grid for observation 2 of {HD 211847}, similar to Figs.~\ref{fig:Mdwarf_contours} and~\ref{fig:HD211847_simulated_contours}. The top right plot shows the application of a single component model (\(C^1\)) while the other three are using a binary model (\(C^2\)). Both left hand panels show the distribution of host temperature and host RV.\@ The top right panel shows the distribution for host and companion temperature, and the bottom right the companion temperature and radial velocity. The red circles indicate the literature values or calculated parameters for the target while the yellow star indicates the minimum \(\chi^2\) solution. The error bar on the \(T_{\textrm{eff}_1}\) is from the literature while the error bars on \({rv}_1\) and \({rv}_2\) are calculated by propagating the orbital parameter uncertainties though the radial velocity equation. The white line shows a 3-\(\sigma\) confidence level about the minimum \(\chi^2\) solution grid point, not always visible here due to the large \(\chi^2\) values.}
     \label{fig:HD211847_result_contours}
 \end{figure*}
@@ -441,7 +441,7 @@ We applied this same method to the remaining targets, with similar results. In b
 
 \begin{figure*}
     \centering
-    \includegraphics[width=0.8\hsize]{images/visualize_result_residuals.pdf}
+    \includegraphics[width=0.8\hsize]{images/fig6.pdf}
     \caption{Comparison between the observed {HD 211847} spectrum (blue) and the best fit synthetic binary model (orange dashed) for each detector. The bottom section of each panel shows the residuals between the parts of the observation used in the \(\chi^2\) fit and recovered binary model (\(\rm O-C^2\)) in purple. The red dashed line shows the difference between the recovered binary model and the binary model with the exact same parameters except for the estimated companion temperature of 3200~K (\(\rm C^2[3200K]- C^2\)). The grey shading indicated the wavelength regions where masking has been applied. The thinner masked regions that match with cuts in the observed spectra are where the centres of deep (>5 per cent) telluric lines that have been masked out are.}
     \label{fig:visualinspection-hd2118471}
 \end{figure*}
@@ -469,7 +469,7 @@ The 1-, 2-, 3-\(\sigma\) values (with 2 degrees of freedom) of 2, 6 and 11 above
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.95\hsize]{images/inject_recovery_hd30501.pdf}
+    \includegraphics[width=0.95\hsize]{images/fig7.pdf}
     \caption{Result of simulated injection-recovery of synthetic companions on {HD 30501}. The blue dots and orange triangles indicate the recovered companion temperature for the observed and synthetic spectra respectively. The \(\pm100\)~K error bars are the grid step of the synthetic models. The black dashed diagonal shows the 1:1 temperature relation. The grey shaded region indicates the \(\pm1000\)~K temperature range explored. Gaussian noise added to the synthetic spectra was derived from the observed spectra.}
     \label{fig:injection-recovery}
 \end{figure}
@@ -477,7 +477,7 @@ The 1-, 2-, 3-\(\sigma\) values (with 2 degrees of freedom) of 2, 6 and 11 above
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.95\hsize]{images/chi2_shape_investigation_sigmas.pdf}
+    \includegraphics[width=0.95\hsize]{images/fig8.pdf}
     \caption{(top) Companion temperature verses \(\chi^2\) for simulations with different injected companion temperatures. Other fixed parameters for these fully synthetic simulations was \(T_{\textrm{eff}_1}=5200\)~K, \(\textrm{logg}_1=4.5\), \(\textrm{logg}_2=5.0\), and both [Fe/H] = 0.0. A fixed Gaussian noise corresponding to a SNR of 300 was used.
         (bottom) A close up view of \(\chi^2\) < 15. The three horizontal grey lines indicate the 1, 2, 3 sigma with 2 degrees of freedom. The vertical dotted lines indicate the location of the minimum \(\chi^2\) recovered for each companion. The black solid vertical in both panels shows the 2300~K cut-off of the PHOENIX-ACES models}
     \label{fig:injection_shape}
@@ -545,7 +545,7 @@ The bump observed at 5100~K in the \(\chi^2\) curves is due to a discontinuity i
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.95\hsize]{images/companion_spectra.pdf}
+    \includegraphics[width=0.95\hsize]{images/fig9.pdf}
     \caption{PHOENIX-ACES spectra for temperatures between 2500 and 5000 K, corresponding to to the same lines in Fig.~\ref{fig:injection_shape}. The flux units are the native units of the PHOENIX-ACES spectrum, (\(\rm erg\,s^{-1}\,cm^{2}\,cm^{-1}\)), and have not been scaled by the stellar radii. All spectra have a \(\rm logg=5.0\) and \(\rm [Fe/H]=0.0\). The vertical dotted lines indicate the edges of the CRIRES detectors.}
     \label{fig:comp_spectra}
 \end{figure}
@@ -573,7 +573,7 @@ Although the newer generations synthetic spectral models are improving and match
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.95\hsize]{images/HD211847_ACES_BTSettl.pdf}
+    \includegraphics[width=0.95\hsize]{images/fig10.pdf}
     \caption{Detector 1 spectrum for {HD 211847} (blue) alongside the PHOENIX-ACES (orange dash-dot) and {BT-Settl} (green dashed) synthetic spectra for the host star only, with parameters \(T_{\textrm{eff}}=5700\)~K, \(\rm logg=4.5\) and \(\rm [Fe/H]=0.0\). Both synthetic models have been normalized and convolved to \(\rm R=50\,000\). There is a 0.05 off-set between each spectrum}
     \label{fig:hd211847-models}
 \end{figure}
@@ -715,7 +715,7 @@ This research has made use of the SIMBAD database, operated at CDS, Strasbourg, 
 
 
     \begin{figure}
-        \includegraphics[width=0.95\hsize]{images/differential.pdf}\\
+        \includegraphics[width=0.95\hsize]{images/fig11.pdf}\\
         \caption{ (Top) A reduced CRIRES observation of {HD 30501} (blue) for detector 1 between 2112--2124~nm along with the tapas telluric absorption model ({orange} dashed) used for the wavelength calibration and telluric correction. (Middle) The telluric corrected spectra. (Bottom) ({blue}) Differential spectra for {HD 30501} between observations 1 and 3. ({orange} dashed) Simulated ``perfect'' differential using PHOENIX-ACES spectra with parameters \(T_{\textrm{eff}} = 2500~K \), \(\rm logg=5.0\), and \(\rm [Fe/H]=0.0 \), with the same \(\Delta RV \) as the observations. The shaded regions indicate where the telluric {green} and host star {blue} spectra are > 4 per cent deep.}
         \label{fig:spectral_example}
     \end{figure}
@@ -741,7 +741,7 @@ This research has made use of the SIMBAD database, operated at CDS, Strasbourg, 
 
     \begin{figure}
         \centering
-        \includegraphics[width=0.8\hsize]{images/relative_amplitude.pdf}
+        \includegraphics[width=0.8\hsize]{images/fig12.pdf}
         \caption{Simulated relative amplitude of differential spectra at different RV separations revealing the diminished amplitude at small orbital separations. The solid blue line shows the maximum relative amplitude of the differential signal (from a shifted copy of itself) of a PHOENIX-ACES spectrum with \(T_{\textrm{eff}}=2500~K, \textrm{logg}=5.0, \textrm{[Fe/H]}=0.0\), in the wavelength region 2110--2123~nm. The maximum difference is normalized by the average amplitude between 7--10\kmps{}, representing a complete line separation. The orange (dashed) and green (dot-dashed) lines represent the relative amplitude of a differential spectrum for a single Gaussian and single Lorentzian absorption line respectively, each with a unitary amplitude and a \(\rm FWHM = \lambda / R \). Beyond the FWHM lines the difference of the synthetic spectrum becomes more complicated due to the interaction of neighbouring lines. The solid vertical lines indicate the estimated companion \(\Delta RV\) in these observations while the dashed vertical lines indicate the RV corresponding to the FWHM at this wavelength and resolution. Beyond the FWHM RV the synthetic spectrum becomes complicated due to the interaction of neighbouring lines.}
 
         \label{fig:diff_amp}
