@@ -78,4 +78,5 @@ todonotes
 beebe
 newtx
 fontaxes
-
+biblatex
+biber
