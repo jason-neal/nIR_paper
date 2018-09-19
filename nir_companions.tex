@@ -98,7 +98,7 @@ In this section we explain the observations and the data reduction process used.
 \label{subsec:CRIRES}
 Observations were performed with the CRIRES instrument~\citep{kaeufl_crires_2004} configured to observe a narrow wavelength domain of the \textit{K}-band between 2120--2160~nm using the {Ks} and the {Hx5e-2} filters. The slit width of \(0.4\sec\) resulted in an instrumental resolving power of \(\rm R=50\,000\), with no adaptive optics to ensure that the slit was entirely covered by each target. This prevents strong slit illumination variations that could change the shape of spectral lines.
 
-The observations were performed in service mode during period 89 with run ID.~089.C-0977(A) between April and August 2012. An observation is composed of 8 individual spectra each with an integration time of 180 seconds, observed in a ABBAABBA nod cycle pattern to obtain a high (>180) signal-to-noise when combined.
+The observations were performed in service mode during period 89 with run ID.~089.C-0977(A) between April and \textbf{September} 2012. An observation is composed of 8 individual spectra each with an integration time of 180 seconds, observed in a ABBAABBA nod cycle pattern to obtain a high (>180) signal-to-noise when combined.
 
 {The list of observations obtained with CRIRES are provided in Table~\ref{tab:observations}.  The SNR is calculated with the formula \(\textrm{SNR} = \frac{\mu}{\sigma}\) where $\mu$ and $\sigma$ are the mean and standard deviation in the continuum of detector 2 between 2130 and 2134 (see Fig.~\ref{fig:spectral_example}).
 The estimated RV values for the host and companion at the time of each observation are calculated using Equation~\ref{eq:rv_equation} using the best known orbital parameters and the companion masses from Tables~\ref{tab:starparams} and~\ref{tab:orbitparams}. For hosts with multiple companions the RV value is for the largest companion only, i.e.\ {HD 202206}B and {HD 168443}c. The RV difference between the host and the companion \(rv_2\) = (\(RV_2 - RV_1\)) is parameter used in the binary model from Sect.~\ref{subsubsec:binary-model}. }
@@ -609,11 +609,11 @@ This research has made use of the SIMBAD database, operated at CDS, Strasbourg, 
     S(\lambda) &= \textrm{I}_{a}(\lambda + v_{1a}) - \textrm{I}_{b}(\lambda + v_{1b}) \nonumber \\
     &= \textrm{J}_{2}(\lambda - v_{2a} + v_{1a}) - \textrm{J}_{2}(\lambda - v_{2b} + v_{1b}) \nonumber \\
     %  &= \textrm{J}_{2}(\lambda - v_{2a}) - \textrm{J}_{2}(\lambda - v_{2b} - v_{1a} + v_{1b}) \nonumber \\
-    S(\lambda + v_{2a}) &= \textrm{J}_{2}(\lambda) - \textrm{J}_{2}(\lambda + \Delta RV ) \label{eqn:sprofile}
+    S(\lambda + v_{2a}) &= \textrm{J}_{2}(\lambda) - \textrm{J}_{2}(\lambda - \Delta RV ) \label{eqn:sprofile}
     \end{align}
     where,
     \begin{equation}
-    \Delta RV = v_{2a} - v_{2b} - v_{1a} + v_{1b} \label{eqn:k}
+    \Delta RV = v_{1a} - v_{1b} - v_{2a} + v_{2b} \label{eqn:k}
     \end{equation}
 
     is the actual RV difference (\(\Delta RV\)) between the two companion spectra.
@@ -628,13 +628,15 @@ This research has made use of the SIMBAD database, operated at CDS, Strasbourg, 
 
     We can simplify Eq.~\ref{eqn:k} by expressing it in terms of the host RV and mass ratio,
     \begin{align}
-    k &= -q v_{1a} + q v_{1b} + v_{1a} - v_{1b} \nonumber \\
-    &= (1 - \textrm{q})(v_{1a} - v_{1b}). \label{eqn:k_simplified}
+    \Delta RV &= -q v_{1a} + q v_{1b} + v_{1a} - v_{1b} \nonumber \\
+    &= (1 + \textrm{q})(v_{1a} - v_{1b}). \label{eqn:k_simplified}
     \end{align}
-    If we are able to determine the \(\Delta RV\) between the the companion spectra, k, from the s-profile~\citep[see ][]{ferluga_separating_1997} then we can determine the mass ratio of the system, q, thereby constraining the mass of the companion. The values \(v_{1a}\) and \(v_{1b}\) are calculated from the orbital parameters of the system and are the same values already used to shift and mutually cancel the host spectrum.
+    If we are able to determine the \(\Delta RV\) between companion spectra,  from the s-profile~\citep[see ][]{ferluga_separating_1997} then we can determine the mass ratio of the system, q, thereby constraining the mass of the companion. The values \(v_{1a}\) and \(v_{1b}\) are calculated from the orbital parameters of the system and are the same values already used to shift and mutually cancel the host spectrum.
 
     This method is very similar to~\citet{kostogryz_spectral_2013} except that they focus on M-dwarfs host stars with the observations taken at the extrema, in which the companion lines are well separated.
-
+    
+    \textbf{Note for review: the sign of Equation \ref{eqn:sprofile} was swapped, Equations \ref{eqn:k} and \ref{eqn:k_simplified} have also been updated, This revealed a mistake in the sign of (1-q) -> (1+q) in  \ref{eqn:k_simplified}}
+    
     \subsection{Estimating parameters of observations}
     To estimate the differential amplitude signal we estimated the expected parameters of the impact of the
 
