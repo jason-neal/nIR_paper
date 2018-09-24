@@ -81,3 +81,5 @@ fontaxes
 biblatex
 biber
 boondox
+cancel
+soul
