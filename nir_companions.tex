@@ -20,6 +20,8 @@
 % Own commands
 \newcommand{\kmps}{\,kms\(^{-1}\)}	% kilometres per second
 
+\newcommand*\bl{\color{blue}}
+
 \title[Towards the nIR detection of BD companions]{Towards the near-infrared detection of brown dwarf companions: Exploring methods to detect low mass stellar companions from blended spectra \thanks{Based on observations collected at the European Organisation for Astronomical Research in the Southern Hemisphere under ESO programme 089.C-0977(A)}}
 
 \author[J. J. Neal et al.]{
@@ -148,7 +150,7 @@ and \(A\), \(\mu\), \(\sigma\) are the amplitude, central wavelength, and standa
 
 The observed spectra contain two different components: stellar and telluric lines overlapped. This overlapping is, in fact, a multiplication of the stellar and telluric spectra. These were fitted with two Gaussian-sum models multiplied together, with the identification of telluric and stellar lines performed {by hand} for each spectra, using the synthetic telluric models as the reference.
 \begin{align}
-I_{obs}(x) &= I_{tell}(x) \times I_{space}(x) \nonumber \\
+I_{obs}(x) &= I_{tell}(x) \times {\bl I_{star}}(x) \nonumber \\
 I_{obs}(x) &= \Big(1 - {\Sigma}_{j}\ G(x, A_{j}, {\mu}_{j}, {\sigma}_{j})\Big) \times \Big(1 - {\Sigma}_{k} G(x, A_{k}, {\mu}_{k}, {\sigma}_{k})\Big), \label{eqn:obs}
 \end{align}
 
