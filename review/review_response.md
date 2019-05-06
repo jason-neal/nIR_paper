@@ -149,6 +149,7 @@ I have changed the line to thus read -
 
 page 10, column 1
 line 59: "We analysis the significance" -> "We analyze the significance"
+**Corrected**
 
 page 10, column 2
 line 61: "likely-hood function" -> "likelihood function"
