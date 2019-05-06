@@ -125,6 +125,7 @@ line 15: "While several works found similar properties on the two populations, l
 
 page 2, column 2
 line 38: "detected in the extreme V-K colour indexes (>7.8)." -> "based on the extreme V-K colours (>7.8) of the companions."
+**Changed**
 
 page 3, column 2
 line 48: "we took measures to remove these artefacts before combining the nod spectra as we are trying to recover companion spectra with expected flux ratios F2/F1 < 1 per cent." -> "we removed these artefacts before combining the nod spectra."
