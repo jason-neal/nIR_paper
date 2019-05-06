@@ -139,6 +139,7 @@ move section 3.2 to be before 3.1.3 since you describe how Tapas is used here
 
 page 8, column 2
 line 44: "radii radii" -> "radii"
+**Resolved thanks**
 
 page 9, column 1
 line 13: "For each model we further allow the continuum level to be varied by ±0.05 as a free parameter" - is this additive or multiplicative?
