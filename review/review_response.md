@@ -142,6 +142,9 @@ line 44: "radii radii" -> "radii"
 
 page 9, column 1
 line 13: "For each model we further allow the continuum level to be varied by ±0.05 as a free parameter" - is this additive or multiplicative?
+**Multiplicative scaling.
+I have changed the line to thus read -
+"For each model we further allow the continuum level to be scaled between 0.95 and 1.05 as a free parameter taking ..."**
 
 page 10, column 1
 line 59: "We analysis the significance" -> "We analyze the significance"
