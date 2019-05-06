@@ -153,9 +153,11 @@ line 59: "We analysis the significance" -> "We analyze the significance"
 
 page 10, column 2
 line 61: "likely-hood function" -> "likelihood function"
+**Done**
 
 page 11, column 1
 line 41: "likely-hood" -> "likelihood"
+**Done**
 
 line 42: "?BIC > 10" <- what sets this threshold?
 
