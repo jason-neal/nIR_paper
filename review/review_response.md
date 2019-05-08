@@ -190,4 +190,6 @@ Table 1
 
 Table 2
 - the listed parameters need to be defined in the table caption
-- should gamma have units of km/s?   **Yes this has been ammended.**
+
+- should gamma have units of km/s?
+**Yes this has been ammended.**
