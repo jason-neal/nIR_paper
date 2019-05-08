@@ -129,6 +129,7 @@ line 38: "detected in the extreme V-K colour indexes (>7.8)." -> "based on the e
 
 page 3, column 2
 line 48: "we took measures to remove these artefacts before combining the nod spectra as we are trying to recover companion spectra with expected flux ratios F2/F1 < 1 per cent." -> "we removed these artefacts before combining the nod spectra."
+**Done**
 
 page 5, column 1
 line 51: what is "I_space"? should this be "I_star"?  
