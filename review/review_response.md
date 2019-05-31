@@ -61,8 +61,10 @@ Main critiques
 The primary critique of this paper is that it is far too long given its minimal scientific outcomes. This is due to a combination of tedious and redundant text that adds little to the main points of the paper; and a significant fraction of the paper referring to a method which is never deployed due to the limitations of the dataset.  Some specific suggestions:
 
 (1) remove all references to the "shifted subtraction" method, including Section 4 and Appendix A. This method is not used, and the authors' long exposition in section 7.2.2 on the need to schedule observations across semesters is irrelevant given that it is of course possible to request observations across semesters (many ESO programs do this); this section should also be removed. 
+**Removed. I have kept one reference to the original motivation.**
 
 (2) Appendix B should also be removed; the methods described here are standard error propagation methods and the definition of the magnitude, and do not need to be reproduced (the footnote to the authors' flux ratio tool could be moved to the main text).
+**Removed**
 
 (3) Remove the many short paragraphs whose only purpose is to introduce the text following these short paragraphs; these do not add anything to the text
 
