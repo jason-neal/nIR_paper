@@ -122,6 +122,7 @@ line 55: "host stars age" -> "host stars' age"
 
 page 2, column 1
 line 15: "While several works found similar properties on the two populations, like a similar densities" -> "While several works found similar properties for the two populations, like similar [mass? number?] densities"
+**Mass density**
 
 page 2, column 2
 line 38: "detected in the extreme V-K colour indexes (>7.8)." -> "based on the extreme V-K colours (>7.8) of the companions."
