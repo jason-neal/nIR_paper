@@ -187,16 +187,13 @@ We used telluric line models to wavelength calibrate the reduced spectra in Sect
 We use the mid-observation time to retrieve transmission models for each observation, with the Arletty atmospheric profiles\footnote{Nearest of the 6 hourly profiles} and vacuum wavelengths. The telluric models were retrieved without any barycentric correction to keep the telluric lines at a RV of zero with respect to the instrument. We obtained one model with all provided species present, convolved to a resolution of \(\rm R=50\,000\), and another two models without an instrumental profile convolution applied. For these two extra models, one contained only the transmission spectra of \(\rm H_{2}O\) while the other was for all other constituents except \(\rm H_{2}O\). This was to explore a known issue~\citep{bertaux_tapas_2014} with the depth of \(\rm H_{2}O\) absorption lines in Sect.~\ref{subsec:telluric_correction}.
 
 \subsection{Wavelength masking}
-We apply several wavelength masks to remove wavelength regions from which we cannot extract information.
-Firstly, regions near the edges of each detector where the wavelength solution is extrapolated outside of the calibrating telluric lines are removed, reducing the effective size of each detector by about \(10\) per cent or \(\sim\)100~pixels.
+Several wavelength masks are applied to remove wavelength regions from which we cannot extract spectral information.
+Firstly, regions near the edges of each detector where the wavelength solution is extrapolated outside of the calibrating telluric lines were removed, reducing the effective size of each detector by about \(10\) per cent or \(\sim\)100~pixels.
 
-Secondly, we mask out any remaining artefacts present in the spectra and the centres of deep telluric lines where telluric correction was not corrected properly, sometimes resulting in ``emission-like'' peaks in the corrected spectrum. These factors combined result in masking out around a further 10 per cent of the observed spectra.
+Secondly, any remaining artefacts present in the spectra were masked out and the centres of deep telluric lines where telluric correction was not corrected properly. These sometimes resulted in ``emission-like'' peaks in the corrected spectrum. These two factors resulted in masking out around a further 10 per cent of the observed spectra.
 
-In Sect.~\ref{sec:results} we also apply a further wavelength restriction to mask out regions where there is a large mismatch between the observed spectrum and the closest synthetic spectra to the host. This significantly restricts the wavelength span utilized for that purpose to around only 43 per cent and the masked regions are visible in Fig.~\ref{fig:visualinspection-hd2118471}.
+In Sect.~\ref{sec:results} a further wavelength restriction is used to mask out regions where there is a large mismatch between the observed spectrum and the closest synthetic spectra for the host star. This significantly restricts the wavelength span utilized to around only 43 per cent. The masked regions are shown as the shaded areas in Fig.~\ref{fig:visualinspection-hd2118471}.
 
-
-{\bl The observations were gathered having in mind the application of a differential subtraction method~\citep[e.g.][]{ferluga_separating_1997, kostogryz_spectral_2013}. However with the small time separation of the observations and long orbital periods the spectral shift of the companions' lines result in an insufficient separation to detect the spectrum of the companion spectrum.
-}
 
 \section{Binary synthetic spectral recovery}
 \label{subsec:companion_recovery}
