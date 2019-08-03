@@ -75,6 +75,7 @@ The primary critique of this paper is that it is far too long given its minimal 
 In terms of analysis, I have the following concerns:
 
 section 3.1.1 - the description of the use of rectangular vs optimal extraction is both verbose and hard to understand. Please simplify by simply stating (if this is correct) - you extracted the spectra with both techniques, used optimal as the default, but replaced with rectangular when noise features skewed the optimal extraction (NB: this shouldn't happen, which suggests something is wrong with the way the optimal extraction profile is being determined)
+**I have simplified this section**
 
 section 5.2 - you define chi^2 as proportional to 1/sigma; traditionally it is proportional to 1/sigma^2 (i.e., the variance) - please clarify and/or revise
 **This has been corrected to 1/sigma^2.**
