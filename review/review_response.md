@@ -75,15 +75,13 @@ The primary critique of this paper is that it is far too long given its minimal 
 In terms of analysis, I have the following concerns:
 
 section 3.1.1 - the description of the use of rectangular vs optimal extraction is both verbose and hard to understand. Please simplify by simply stating (if this is correct) - you extracted the spectra with both techniques, used optimal as the default, but replaced with rectangular when noise features skewed the optimal extraction (NB: this shouldn't happen, which suggests something is wrong with the way the optimal extraction profile is being determined)
-**I have simplified this section**
+**I have simplified the Data reduction section**
 
 section 5.2 - you define chi^2 as proportional to 1/sigma; traditionally it is proportional to 1/sigma^2 (i.e., the variance) - please clarify and/or revise
 **This has been corrected to 1/sigma^2.**
 
 section 5.2 - if I understand this correctly, you determine a chi^2 "surface" for all of your parameters for each spectrum, and then add these surfaces from all spectra together? is there any weighting between the different spectra? since the masking is different for each spectrum, it is not clear whether you are introducing biases in this analysis
-
 **No there is no extra weighting function between the separate detectors, they are treated as a continued sum.**  
-
 
 section 5.2 - for your reduced chi^2, did you take into account that masked pixels are not "observed"?
 Yes the pixels masked out were excluded in the reduced chi^2
@@ -95,22 +93,39 @@ Rotational broadening of the host was not included as an extra variable fitting 
 
 
 section 5.3.2 - "This choice is arbitrary, but in this way the mean motion of the system relative to Earth is captured only in rv1." - this ignores the radial motion of the primary star; both rv2 and rv1 vary about the center of mass of the system, and it is not clear that you are taking this motion into account based on the text.
-
 **I have included that rv_1 contains the motion of the host star and is relative to our barycentre,
 "Both spectra are Doppler shifted by \({rv}_1\) which represents the RV motion of the host star relative to Earths' barycentre, while the companion spectra is Doppler shifted a second time by \({rv}_2 \) which represents the RV  difference ...
 ... but in this way the mean motion of the system relative to Earth is captured only in \({rv}_1\), along with the orbital motion of the host."**
 
-section 5.5 - the significant reduction in model parameters (to just temperature & RV for the single model fit) is concerning, particularly given the statement later on in section 7.1.7 that logg plays a significant role in the inferred fit. Also, 2 or 4 parameters for a model fit is quite limited given the potentially large amount of information contained within the spectra. This reduction needs to be better justified, particularly given the poor fits of the models to the data.
+section 5.5 - the significant reduction in model parameters (to just temperature & RV for the single model fit) is concerning, 
+particularly given the statement later on in section 7.1.7 that logg plays a significant role in the inferred fit. 
+Also, 2 or 4 parameters for a model fit is quite limited given the potentially large amount of information contained within the spectra. 
+This reduction needs to be better justified, particularly given the poor fits of the models to the data.
+**I have included that the parameters were restircted due to the poor spectral match.**
 
 what sets the range of, e.g., temperatures used in the model grid fit?
+**They temperature ranges were set by trial and error. Typically between 500-1000~K. The lower limits for the companion were set by the model limit.**
 
 you state on line 38: "We also fix the logg of the host star to its literature values given in Table 1"; however, these values are not grid points for the models. Did you interpolate the model grid or choose the nearest grid point?
+**Againt we used the nearest point. I have changed this paragraph to read 
+"Our first assumption is to restrict ourselves to models with an Alpha element abundance ([\(\alpha\)/Fe]) of zero.
+This is likely a very good approximation as all our targets have solar metallicity and are thus very likely to belong to the thin disk of the Galaxy, where [\(\alpha\)/Fe] values are close to zero (i.e., solar) -- e.g.~\citet{adibekyan_chemical_2012}.
+Our second assumption is that the search space can be significantly reduced using the literature values for the host star given in Table~\ref{tab:starparams}. 
+The metallicity of both components and the logg of the host star is fixed to the grid points closest to the literature values.
+The uncertainties on the literature measurements for metallicity (\(\sim\)0.05) and logg (\(\sim\)0.1) are both smaller than the grid steps of 0.5 for these parameters.
+For the logg of the companion the~\citet{baraffe_evolutionary_2003,baraffe_new_2015} evolutionary model value are used for the given companions \(\textrm{M}_2\)/\(\textrm{M}_2\sin{i}\) and hosts age."**
 
-section 6.3 - this section describes tests of the "viable range" of companion parameter recovery; however, its design is different than the model fitting applied to the data. In particular, fixing the primary Teff and RV is going to give you better outcomes than what is actually realized from the model fitting.  Similarly, fitting binary models to synthetic model spectra is not an appropriate test for the data themselves, although it could predict sensitivity when the models are (eventually) accurate representations of stellar spectra. A suitable caveat is warranted here.
+section 6.3 - this section describes tests of the "viable range" of companion parameter recovery; 
+however, its design is different than the model fitting applied to the data. 
+In particular, fixing the primary Teff and RV is going to give you better outcomes than what is actually realized from the model fitting. 
+Similarly, fitting binary models to synthetic model spectra is not an appropriate test for the data themselves, although it could predict sensitivity when the models are (eventually) accurate representations of stellar spectra.
+A suitable caveat is warranted here.
 
-section 7.1 - it seems that the main limitation in the synthetic recovery is the extra/missing lines in the model compared to the data. Some attempt should be made to identify what lines are problematic here - are they molecular or atomic? You may be able to find the relevant information in NIST (for atomic) or EXOMOL (for molecular). It is not enough to say the models are wrong, it is essential to understand what is actually wrong.
+section 7.1 - it seems that the main limitation in the synthetic recovery is the extra/missing lines in the model compared to the data. 
+Some attempt should be made to identify what lines are problematic here - are they molecular or atomic? You may be able to find the relevant information in NIST (for atomic) or EXOMOL (for molecular). It is not enough to say the models are wrong, it is essential to understand what is actually wrong.
 
-Table 7 (detection thresholds) - it appears that the detection threshold (based on the caption in this table) is a 1-sigma detection. I am not convinced (based on the analysis provided) that continuum variations on par with noise is a viable detection threshold.  Please elaborate.
+Table 7 (detection thresholds) - it appears that the detection threshold (based on the caption in this table) is a 1-sigma detection. 
+I am not convinced (based on the analysis provided) that continuum variations on par with noise is a viable detection threshold.  Please elaborate.
 
 Parameter uncertainties - in Section 7.1.3 (page 15, column 2, line 46) you cite uncertainties for an injected companion temperature. How are these uncertainties determined?
 
