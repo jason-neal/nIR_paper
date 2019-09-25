@@ -25,15 +25,15 @@
 \title[Towards the nIR detection of BD companions]{Towards the near-infrared detection of brown dwarf companions: Exploring methods to detect low mass stellar companions from blended spectra \thanks{Based on observations collected at the European Organisation for Astronomical Research in the Southern Hemisphere under ESO programme 089.C-0977(A)}}
 
 \author[J. J. Neal et al.]{
-J. J. Neal$^{1,2}$\thanks{E-mail: jason.neal@astro.up.pt}
-P. Figueira$^{3,1}$
-N. C. Santos$^{1,2}$
-C. Melo$^{3}$
-\\
-% List of institutions
-$^{1}$Instituto de Astrof\'{\i}sica e Ci\^encias do Espa\c{c}o, CAUP, Universidade do Porto, Rua das Estrelas, PT4150-762 Porto, Portuga\\l
-$^{2}$Departamento de F\'{\i}sica e Astronomia, Faculdade de Ci\^{e}ncias, Universidade do Porto, Portugal\\
-$^{3}$European Southern Observatory, Alonso de C\'{o}rdova 3107, Vitacura, Casilla 19001, Santiago 19, Chile\\
+    J. J. Neal$^{1,2}$\thanks{E-mail: jason.neal@astro.up.pt}
+    P. Figueira$^{3,1}$
+    N. C. Santos$^{1,2}$
+    C. Melo$^{3}$
+    \\
+    % List of institutions
+    $^{1}$Instituto de Astrof\'{\i}sica e Ci\^encias do Espa\c{c}o, CAUP, Universidade do Porto, Rua das Estrelas, PT4150-762 Porto, Portugal\\
+    $^{2}$Departamento de F\'{\i}sica e Astronomia, Faculdade de Ci\^{e}ncias, Universidade do Porto, Portugal\\
+    $^{3}$European Southern Observatory, Alonso de C\'{o}rdova 3107, Vitacura, Casilla 19001, Santiago 19, Chile\\
 }
 % These dates will be filled out by the publisher
 \date{Accepted XXX. Received YYY; in original form ZZZ}
@@ -571,22 +571,19 @@ This research has made use of the SIMBAD database, operated at CDS, Strasbourg, 
 
     % Table of estimates of parameters
     \input{tables/estimatedparameters}
-
-
+    
+    
     \section{Estimating companion parameters}
-    In this appendix we detail how we calculate RV of the components and determine the flux ratio of our targets given their literature masses \(M_2\) or \(M_{2}\sin{i}\). We refer to these calculations as estimates as in some cases we only have the companions minimum mass.
-
-    The estimated \(K_2\) for each companion is provided in Table~\ref{tab:estimatedparameters} while the RV for both components at the time of each observation is provided in Table~\ref{tab:observations}.
-
-
-
+    
+    {\bl In Table~\ref{tab:estimatedparameters} we present the flux ratio for the sudied systems based on their published masses \(M_2\) or \(M_{2}\sin{i}\) and \(K_2\) for each companion}. We refer to these calculations as estimates as in some cases we only have the companions minimum mass.
+    
     {\bl The host companion contrast ratio is calculated from the magnitude difference. Magnitudes for the companion are interpolated from the Barraffe tables.
         
-    A simple tool\footnote{Available at \url{https://github.com/jason-neal/baraffe_tables}} was created to calculate the flux ratio using the~\citep{baraffe_evolutionary_2003,baraffe_new_2015} evolution tables. Given the host star name, the companion mass and a stellar age it interpolates the available Baraffe tables to the companion mass and age specified. The host's name is used to query the {SIMBAD} database to obtain stellar properties, specifically magnitudes, to calculate the flux ratios. It can also work in reverse to estimate a companion mass when provided with a flux ratio.}
-
-% Don't change these lines
-\bsp{}	% typesetting comment
-\label{lastpage}
+        A simple tool\footnote{Available at \url{https://github.com/jason-neal/baraffe_tables}} was created to calculate the flux ratio using the~\citep{baraffe_evolutionary_2003,baraffe_new_2015} evolution tables. Given the host star name, the companion mass and a stellar age it interpolates the available Baraffe tables to the companion mass and age specified. The host's name is used to query the {SIMBAD} database to obtain stellar properties, specifically magnitudes, to calculate the flux ratios. It can also work in reverse to estimate a companion mass when provided with a flux ratio.}
+    
+    % Don't change these lines
+    \bsp{}	% typesetting comment
+    \label{lastpage}
 \end{document}
 
 % End of mnras_template.tex
