@@ -78,9 +78,8 @@
     
     {\bl It is important to note that the search and detection of faint secondary spectra is not only relevant to planetary atmospheres, and has been attempted previously for the stellar and substellar regime.} \citet{kolbl_detection_2015} developed a method to detect the presence of optical secondary spectra down to a flux ratio of 1 per cent in the hosts of \emph{Kepler} transit candidates. The presence of which can cause ambiguities in the system configuration, {\bl and introduce important systematics of the measured planet radius.} The characterization of the false positive probability rate for Kepler has been found to be as high as \(\sim\)35 per cent~\citet{santerne_sophie_2012},{\bl highlighting the strong incidence of the problem.}
     
-    {\bl In this paper we aim at detecting spectrcoscopically the BD companions of FGK stars. In Sect.~\ref{sec:motivation} we present the motivation for target selection, and in Sect.~\ref{sec:data} we present the observations and reduction process, along with the spectral models used in this work. In Sect.~\ref{sec:companion_recovery} we explain our companion recovery technique and its applicability to these observations,} while in Sect.~\ref{sec:results} we apply companion recovery using a \(\chi^{2}\) approach. In Sect.~\ref{sec:discussion} we discuss our results and in Sect.~\ref{sec:conclusions} we present our conclusions.
-    
-    
+    {\bl In this paper we aim at detecting spectroscopically the BD companions of FGK stars. In Sect.~\ref{sec:motivation} we present the motivation for target selection, and in Sect.~\ref{sec:data} we present the observations and reduction process, along with the spectral models used in this work. In Sect.~\ref{sec:companion_recovery} we explain our companion recovery technique and its applicability to these observations,} while in Sect.~\ref{sec:results} we apply companion recovery using a \(\chi^{2}\) approach. In Sect.~\ref{sec:discussion} we discuss our results and in Sect.~\ref{sec:conclusions} we present our conclusions.
+       
     \section{Motivation and target selection}
     \label{sec:motivation}
     \citet{sahlmann_search_2011} identified several candidate brown dwarf companions of FGK stars with \(\rm M_2 \sin{i}\) values >\(\rm 10~M_{Jup}\).{\bl, These objects were among the best characterized BD at the time of the observations, and we selected seven candidates visible in Period 89. The \textit{K}-band was selected to achieve a high contrast of the BD relative to the host star,  based on the extreme V-K colour indexes (>7.8) of the companions}. 
@@ -107,8 +106,8 @@
     
     The observations were conducted in service mode during period 89 under run ID.~089.C-0977(A) between April and September 2012. An observation is composed of 8 individual spectra each with an integration time of 180 seconds, observed in a ABBAABBA nod cycle pattern to obtain a high (>180) signal-to-noise when combined.
     
-    {The list of observations obtained with CRIRES are provided in Table~\ref{tab:observations}. The SNR is calculated with the formula \(\textrm{SNR} = \frac{\mu}{\sigma}\) where $\mu$ and $\sigma$ are the mean and standard deviation in the continuum of detector 2 between 2130 and 2134 (see Fig.~\ref{fig:spectral_example}).
-    The estimated RV values for the host and companion at the time of each observation are calculated using Equation~\ref{eq:rv_equation} using the best known orbital parameters and the companion masses from Tables~\ref{tab:starparams} and~\ref{tab:orbitparams}. For hosts with multiple companions the RV value is for the largest companion only, i.e.\ {HD 202206}B and {HD 168443}c. The RV difference between the host and the companion \(rv_2\) = (\(RV_2 - RV_1\)) is parameter used in the binary model from Sect.~\ref{subsubsec:binary-model}. }
+    {The list of observations obtained with CRIRES are provided in Table~\ref{tab:observations}. The SNR is calculated with the formula \(\textrm{SNR} = \frac{\mu}{\sigma}\) where $\mu$ and $\sigma$ are the mean and standard deviation in the continuum of detector 2 between 2130 and 2134 (see Fig.~\ref{fig:detector4allspectra}).
+    The estimated RV values for the host and companion at the time of each observation are calculated using the radial velocity equations using the best known orbital parameters and the companion masses from Tables~\ref{tab:starparams} and~\ref{tab:orbitparams}. For hosts with multiple companions the RV value is for the largest companion only, i.e.\ {HD 202206}B and {HD 168443}c. The RV difference between the host and the companion \(rv_2\) = (\(RV_2 - RV_1\)) is parameter used in the binary model from Sect.~\ref{subsubsec:binary-model}. }
     
     \input{tables/observation_table}
     
@@ -181,7 +180,7 @@
     The TAPAS (Transmissions of the AtmosPhere for AStronomical data) web-service\footnote{\url{http://www.pole-ether.fr/tapas/}}~\citep{bertaux_tapas_2014} was used to obtain atmospheric transmission models for each observation. TAPAS uses the standard line-by-line radiation transfer model code LBLRTM~\citep{clough_linebyline_1995} along with the 2008 HITRAN spectroscopic database~\citep{rothman_hitran_2009} and Arletty atmospheric profiles derived using meteorological measurements from the ETHER data centre\footnote{\url{http://www.pole-ether.fr}}, which has a 6 hour resolution in atmospheric profiles.
     We use the mid-observation time to retrieve transmission models for each observation, with the Arletty atmospheric profiles\footnote{Nearest of the 6 hourly profiles} and vacuum wavelengths. The telluric models were retrieved without any barycentric correction to keep the telluric lines at a RV of zero with respect to the instrument. We obtained one model with all provided species present, convolved to a resolution of \(\rm R=50\,000\), and another two models without an instrumental profile convolution applied. For these two extra models, one contained only the transmission spectra of \(\rm H_{2}O\) while the other was for all other constituents except \(\rm H_{2}O\).
     
-    Before the correction, the depth of the telluric lines were re-scaled to match the airmass of the observation using the relation \(\rm T = T^{\beta}\), where \(\rm T\) is the telluric spectrum and \(\beta\) is the airmass ratio between the observation and model. This changed the depth of most absorption lines to match the observations, but does not correctly scale the deeper \(\rm H_{2}O\) lines. The scaled telluric model is interpolated to the wavelengths of the observed spectrum and then used to correct the observed spectra. An example of a telluric corrected spectra is shown in the middle panel of Fig.~\ref{fig:spectral_example}, with the light blue shading indicating where the deeper telluric lines were.
+    Before the correction, the depth of the telluric lines were re-scaled to match the airmass of the observation using the relation \(\rm T = T^{\beta}\), where \(\rm T\) is the telluric spectrum and \(\beta\) is the airmass ratio between the observation and model. This changed the depth of most absorption lines to match the observations, but does not correctly scale the deeper \(\rm H_{2}O\) lines. The scaled telluric model is interpolated to the wavelengths of the observed spectrum and then used to correct the observed spectra. 
     
     {\bl We attempted the technique suggested by~\citet{bertaux_tapas_2014} of fitting a scaling factor to the \(\rm {H}_{2}O\) absorption lines before convolution to the instrument resolution as a way to address the poor \(\rm H_{2}O\) airmass scaling.} This was achieved by first dividing the spectrum by a telluric model with only non-\(\rm H_{2}O\) constituents, convolved to the observed resolution, and scaled by the airmass to remove the non-\(\rm H_{2}O\) lines. Then a model with only \(\rm H_{2}O\) lines at full resolution was scaled by a factor \(\textrm{T}^{x}\), convolved to \(\rm R=50\,000\) and compared to the observed spectra. The factor \(x\) was fitted to find the best scaling factor for the \(\rm H_{2}O\) lines.
     
@@ -556,6 +555,9 @@
     
     %%%%%%%%%%%%%%%%% APPENDICES %%%%%%%%%%%%%%%%%%%%%
     \appendix
+    
+    \setcounter{table}{0}
+    \renewcommand{\thetable}{A\arabic{table}}
     
     % Table of estimates of parameters
     \input{tables/estimatedparameters}
