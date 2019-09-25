@@ -1,4 +1,4 @@
-
+﻿
 **Responses to the review questions are in bold.**
 
 
@@ -128,6 +128,7 @@ Table 7 (detection thresholds) - it appears that the detection threshold (based 
 I am not convinced (based on the analysis provided) that continuum variations on par with noise is a viable detection threshold.  Please elaborate.
 
 Parameter uncertainties - in Section 7.1.3 (page 15, column 2, line 46) you cite uncertainties for an injected companion temperature. How are these uncertainties determined?
+**These are determined by the 1-sigma line meets the orange line in the bottom panel of Figure 8**
 
 
 --------------
